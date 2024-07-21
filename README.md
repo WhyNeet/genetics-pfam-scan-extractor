@@ -6,6 +6,32 @@ Go to the [Latest Release](https://github.com/WhyNeet/genetics-pfam-scan-extract
 - MacOS, Intel Chip (`pfam_scan_x86_64-apple-darwin`)
 - Linux (`pfam_scan_x86_64-unknown-linux-gnu`)
 - Windows (`pfam_scan_x86_64-pc-windows-msvc.exe`)
+### Run the program
+Use the following command to run the program:
+```shell
+./<program_path> <scan_files_dir>
+```
+Here is an example command and its output:
+```shell
+./<program_path> examples/barcode24
+```
+```
+file: examples/barcode24/flye_medaka.txt
+unique proteins: 2570
+min: 5.7; avg: 116.63068717439866; max: 1444.7
+
+file: examples/barcode24/flye_medaka_polypolisher.txt
+unique proteins: 2527
+min: 5.7; avg: 117.87987531172107; max: 1444.7
+
+file: examples/barcode24/flye_medaka_polypolisher_pypolca.txt
+unique proteins: 2527
+min: 5.7; avg: 117.87987531172107; max: 1444.7
+
+file: examples/barcode24/flye.txt
+unique proteins: 2582
+min: 5.7; avg: 116.3131748390295; max: 1444.7
+```
 ## Run from source
 ### Clone the repository
 ```shell

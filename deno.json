@@ -1,6 +1,7 @@
 {
   "tasks": {
     "dev": "deno run --watch main.ts",
-    "start": "deno run --allow-read main.ts"
+    "start": "deno run --allow-read main.ts",
+    "compile": "deno compile --allow-read --output build/pfam_scan main.ts"
   }
 }

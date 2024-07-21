@@ -2,6 +2,10 @@
   "tasks": {
     "dev": "deno run --watch main.ts",
     "start": "deno run --allow-read main.ts",
-    "compile": "deno compile --allow-read --output build/pfam_scan main.ts"
+    "compile-linux": "deno compile --allow-read --output build/pfam_scan_x86_64-unknown-linux-gnu --target x86_64-unknown-linux-gnu main.ts",
+    "compile-windows": "deno compile --allow-read --output build/pfam_scan_x86_64-pc-windows-msvc --target x86_64-pc-windows-msvc main.ts",
+    "compile-darwin": "deno compile --allow-read --output build/pfam_scan_x86_64-apple-darwin --target x86_64-apple-darwin main.ts",
+    "compile-darwin-arm": "deno compile --allow-read --output build/pfam_scan_aarch64-apple-darwin --target aarch64-apple-darwin main.ts",
+    "compile-all": "deno task compile-linux && deno task compile-windows && deno task compile-darwin && deno task compile-darwin-arm"
   }
 }

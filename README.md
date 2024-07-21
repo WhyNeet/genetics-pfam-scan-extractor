@@ -1,5 +1,12 @@
 # Pfam scan stats extractor
-## Usage
+## Run compiled program
+### Download a release binary
+Go to the [Latest Release](https://github.com/WhyNeet/genetics-pfam-scan-extractor/releases/latest) page. Download the binary for your platform:
+- MacOS, Apple Silicon Chip (`pfam_scan_aarch64-apple-darwin`)
+- MacOS, Intel Chip (`pfam_scan_x86_64-apple-darwin`)
+- Linux (`pfam_scan_x86_64-unknown-linux-gnu`)
+- Windows (`pfam_scan_x86_64-pc-windows-msvc.exe`)
+## Run from source
 ### Clone the repository
 ```shell
 git clone https://github.com/WhyNeet/genetics-pfam-scan-extractor.git
